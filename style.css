@@ -1,0 +1,149 @@
+/* 1. IMPORT FONT & VARIABLES */
+@import url('https://fonts.cdnfonts.com/css/press-start');
+
+:root {
+    --mariner-50: #f1f8fd;
+    --mariner-100: #e0eff9;
+    --mariner-200: #c8e3f5;
+    --mariner-300: #a1d1ef;
+    --mariner-400: #75b7e5;
+    --mariner-500: #549cdd;
+    --mariner-600: #4082d0;
+    --mariner-700: #366dbd;
+    --mariner-800: #32599b;
+    --mariner-900: #2d4c7b;
+    --mariner-950: #1f304c;
+    
+    --primary-red: #b34e42; /* Reddish-brown from your previous setup */
+    --cream-bg: #e9e5d7;    /* The header/about background color */
+}
+
+/* 2. GENERAL SETTINGS */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--mariner-50);
+    color: var(--mariner-950);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 3. NAVIGATION BAR (Updated to your format) */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cream-bg); 
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--mariner-900);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-red);
+    font-family: 'Press Start', cursive;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--primary-red);
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Press Start', cursive;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--mariner-600);
+}
+
+/* 4. ACTIVITY SECTION (Integrated with your format) */
+.activity-section {
+    background-color: var(--mariner-100); /* Keeps the section distinct */
+    padding: 100px 20px 60px 20px; /* Top padding increased for fixed nav */
+    text-align: center;
+    border-bottom: 3px dashed var(--mariner-300);
+}
+
+.section-title {
+    font-family: 'Press Start', cursive;
+    color: var(--primary-red);
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.activity-grid {
+    display: flex;         
+    justify-content: center;
+    gap: 30px;             
+    flex-wrap: wrap;       
+}
+
+.activity-card {
+    background: white;
+    border: 4px solid var(--mariner-900); 
+    padding: 25px;
+    width: 300px;
+    border-radius: 15px; /* Matches your portrait-box style */
+    transition: transform 0.2s;
+    text-align: left;
+    box-shadow: 6px 6px 0px rgba(0,0,0,0.1); /* Adds that retro depth */
+}
+
+.activity-card:hover {
+    transform: translateY(-10px); 
+    background-color: var(--mariner-50);
+}
+
+.activity-card h3 {
+    font-family: 'Press Start', cursive;
+    font-size: 12px;
+    color: var(--mariner-800);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.activity-card p {
+    font-size: 0.9rem;
+    color: var(--mariner-950);
+    margin-bottom: 15px;
+}
+
+.tag {
+    font-family: 'Press Start', cursive;
+    font-size: 8px;
+    background-color: var(--mariner-200);
+    color: var(--mariner-900);
+    padding: 5px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* 5. FOOTER (Updated to your format) */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--mariner-900);
+    color: white;
+    font-family: 'Press Start', cursive;
+    font-size: 10px;
+}
