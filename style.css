@@ -1,0 +1,295 @@
+@import url('https://fonts.cdnfonts.com/css/press-start');
+
+:root {
+    --mariner-50: #f1f8fd;
+    --mariner-100: #e0eff9;
+    --mariner-200: #c8e3f5;
+    --mariner-300: #a1d1ef;
+    --mariner-400: #75b7e5;
+    --mariner-500: #549cdd;
+    --mariner-600: #4082d0;
+    --mariner-700: #366dbd;
+    --mariner-800: #32599b;
+    --mariner-900: #2d4c7b;
+    --mariner-950: #1f304c;
+
+    --primary-red: #b34e42; /* Reddish-brown from your previous setup */
+    --cream-bg: #e9e5d7;    /* The header/about background color */
+}
+
+/* 1. The Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start';
+    letter-spacing: 1px;
+}
+
+/* 3. Navigation Styling */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--mariner-900);
+    padding: 1rem;
+    position: fixed; /* Keeps the menu at the top while you scroll */
+    width: 100%;
+    top: 0;
+    height: 55px;
+    border-bottom: 3px solid var(--primary-red);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+/* 4. Section Spacing */
+section {
+    padding: 60px 20px; /* Padding top so the fixed nav doesn't cover the title */
+}
+
+.logo {
+    display: flex;
+    color: white;
+    gap: 10px;
+    font-family: 'Press Start';
+    text-decoration: none;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 50px;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+/* --------------------------------------------------------------------------------------HERO */
+#hero {
+    background-image: url('herobg1.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 5rem; /* Massive Title */
+    color: var(--primary-red);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.4);
+    margin-bottom: 30px;
+}
+
+.hero-sub, 
+.hero-desc {
+    font-size: 18px; /* Bigger Subtitles */
+    letter-spacing: 2px;
+    color: var(--mariner-900);
+    text-shadow: 3px 3px 0px var(--mariner-300);
+    max-width: 900px;
+    margin: 15px 0;
+    line-height: 50px;
+}
+
+/* -------------------------------------------------------------------ABOUT */
+#About {
+    background-color: var(--mariner-100);
+    padding-bottom: 0;
+}
+
+.character-sheet {
+    background-color: #e3d5c1; /* Matching your image bg */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.player-card {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-header .player-name {
+    font-size: 40px;
+    color: #b34e42;
+}
+
+.main-stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.portrait-box {
+    background-color: #b34e42; /* Terracotta Frame */
+    padding: 20px;
+    border-radius: 30px;
+    width: 300px;
+}
+
+.portrait-box img {
+    width: 100%;
+    border-radius: 15px;
+    image-rendering: pixelated;
+}
+
+.info-box-stitched {
+    flex: 1;
+    border: 3px dotted #2d4c7b; /* The Blue Stitched Border */
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 2.5;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bio-container {
+    margin: 10px 0;
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.box-title {
+    font-size: 12px;
+    color: #7a8ba8;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.stats-list {
+    list-style: none;
+    line-height: 2;
+    color: #b34e42;
+}
+
+.skills-container {
+    margin-top: 10px;
+    border: 3px dotted #2d4c7b;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-item img {
+    width: 50px;
+    image-rendering: pixelated;
+    display: block;
+    padding: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------Activity */
+.activity-section {
+    background-color: var(--mariner-100); /* Keeps the section distinct */
+    padding: 100px 20px 60px 20px; /* Top padding increased for fixed nav */
+    text-align: center;
+    border-bottom: 3px solid var(--primary-red);
+}
+
+.section-title {
+    font-family: 'Press Start', cursive;
+    color: var(--primary-red);
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.activity-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    background: white;
+    border: 4px solid var(--mariner-900);
+    padding: 25px;
+    width: 300px;
+    border-radius: 15px;
+    transition: transform 0.2s;
+    text-align: left;
+    box-shadow: 6px 6px 0px rgba(0,0,0,0.1);
+}
+
+.activity-card:hover {
+    transform: translateY(-10px);
+    background-color: var(--mariner-50);
+}
+
+.activity-card h3 {
+    font-family: 'Press Start', cursive;
+    font-size: 12px;
+    color: var(--mariner-800);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.activity-card p {
+    font-size: 0.9rem;
+    color: var(--mariner-950);
+    margin-bottom: 15px;
+}
+
+.activity-card a, 
+.card-link {
+    font-family: 'Press Start', cursive;
+    font-size: 8px;
+    color: var(--primary-red);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.tag {
+    font-family: 'Press Start', cursive;
+    font-size: 8px;
+    background-color: var(--mariner-200);
+    color: var(--mariner-900);
+    padding: 5px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* 5. FOOTER (Updated to your format) */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--mariner-900);
+    color: white;
+    font-family: 'Press Start', cursive;
+    font-size: 10px;
+}
